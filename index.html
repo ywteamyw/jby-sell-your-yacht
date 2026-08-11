@@ -155,7 +155,8 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
 .step .num{font-family:'Mesmerize',sans-serif;font-weight:300;font-size:42px;line-height:1;color:var(--ink)}
 .step .st-body{margin-top:auto;display:flex;flex-direction:column;gap:14px}
 .step .tag{align-self:flex-start;font-family:'Mesmerize',sans-serif;font-weight:300;font-size:18px;line-height:24px;text-transform:uppercase;color:var(--ink)}
-.step p{color:var(--c2);font-size:15px;line-height:23px}
+.step p{color:var(--c2);font-size:15px;line-height:23px;min-height:115px}
+@media(max-width:980px){.step p{min-height:0}}
 @media(max-width:980px){.steps{grid-template-columns:1fr 1fr}.step,.step:nth-child(n){min-height:0}}
 @media(max-width:560px){.steps{grid-template-columns:1fr}}
 
@@ -170,8 +171,10 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
 .expo-text{max-width:600px;display:flex;flex-direction:column;gap:24px}
 .expo-text h2{color:var(--ink)}
 .expo-list{list-style:none;display:flex;flex-direction:column;gap:0;margin-top:6px}
-.expo-list li{display:flex;padding:18px 0;border-top:1px solid var(--line)}
+.expo-list li{display:flex;gap:14px;align-items:center;padding:18px 0;border-top:1px solid var(--line)}
 .expo-list li:first-child{border-top:none}
+.expo-list .chk{flex:0 0 auto;width:20px;height:20px;color:var(--navy)}
+.expo-list .chk svg{width:20px;height:20px;display:block}
 .expo-list p{color:var(--c2);font-size:16px;line-height:24px}
 @media(max-width:900px){.expo-grid{grid-template-columns:1fr;gap:40px}.expo-media{aspect-ratio:16/11;max-height:460px}}
 
@@ -367,10 +370,10 @@ footer{background:var(--page);padding:40px 40px;color:var(--c2);font-size:14px;b
       <div class="expo-text">
         <h2 class="h-sm reveal">Give your yacht the exposure it deserves</h2>
         <ul class="expo-list">
-          <li class="slide-l"><p>Professional photography, drone footage &amp; 360&deg; tours</p></li>
-          <li class="slide-l"><p>Featured placement on the Jeff Brown Yachts website</p></li>
-          <li class="slide-l"><p>MLS &amp; international listings: YachtWorld, Boat Trader</p></li>
-          <li class="slide-l"><p>Digital, print &amp; social advertising with CRM follow-up</p></li>
+          <li class="slide-l"><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4 10-10"/></svg></span><p>Professional photography, drone footage &amp; 360&deg; tours</p></li>
+          <li class="slide-l"><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4 10-10"/></svg></span><p>Featured placement on the Jeff Brown Yachts website</p></li>
+          <li class="slide-l"><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4 10-10"/></svg></span><p>MLS &amp; international listings: YachtWorld, Boat Trader</p></li>
+          <li class="slide-l"><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4 10-10"/></svg></span><p>Digital, print &amp; social advertising with CRM follow-up</p></li>
         </ul>
       </div>
     </div>
